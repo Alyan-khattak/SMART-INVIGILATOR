@@ -1,0 +1,16 @@
+# Virtual environment
+env/
+
+# VS Code
+.vscode/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model weights
+*.pt
+
+# Generated data
+Phone_Crops/
+img/
