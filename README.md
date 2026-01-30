@@ -15,29 +15,22 @@ Follow this step-by-step guide to set up the project on your local machine.
 It is recommended to use a virtual environment to manage dependencies.
 
 **Windows**
-```bash
+
 python -m venv venv
 venv\Scripts\activate
-macOS / Linux
-code
-Bash
-python3 -m venv venv
-source venv/bin/activate
-3️⃣ Install Required Libraries
+
+
+###3️⃣ Install Required Libraries
 You can install the dependencies using one of the following methods:
-Option A: Using requirements.txt (Recommended)
-code
-Bash
+##Option A: Using requirements.txt (Recommended)
 pip install -r requirements.txt
-Option B: Manual Installation
-code
-Bash
-pip install ultralytics numpy opencv-python mediapipe==0.10.21 scikit-learn flask
-4️⃣ Run the System
+##Option B: Manual Installation
+pip install ultralytics numpy opencv-python mediapipe==0.10.21 
+###4️⃣ Run the System
 Once the environment is set up and libraries are installed, run the main detection script:
-code
-Bash
 python main.py
+
+
 ⚡ Features
 🎯 Real-Time Detection
 Integrated YOLOv8 / YOLOv9 models for high-accuracy detection of students and mobile devices.
