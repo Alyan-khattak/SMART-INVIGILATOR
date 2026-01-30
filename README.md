@@ -21,11 +21,12 @@ venv\Scripts\activate
 
 3️⃣ Install Required Libraries
 You can install the dependencies using one of the following methods:
-Option A: Using requirements.txt (Recommended)
+
+*Option A:* Using requirements.txt (Recommended)
 ```bash
 pip install -r requirements.txt
 ```
-ption B: Manual Installation
+*option B:* Manual Installation
 ```bash
 pip install ultralytics numpy opencv-python mediapipe==0.10.21 scikit-learn flask
 ```
