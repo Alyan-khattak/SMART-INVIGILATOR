@@ -10,60 +10,55 @@
 Follow this step-by-step guide to set up the project on your local machine.
 
 ### 1️⃣ Clone the Repository
-Open your terminal or command prompt and run:
-```bash
-git clone https://github.com/your-username/smart-invigilator.git
-cd smart-invigilator
-2️⃣ Create a Virtual Environment
+
+
+###2️⃣ Create a Virtual Environment
 It is recommended to use a virtual environment to manage dependencies.
-Windows
-code
-Powershell
+```bash
 python -m venv venv
 venv\Scripts\activate
-macOS / Linux
-code
-Bash
-python3 -m venv venv
-source venv/bin/activate
-3️⃣ Install Required Libraries
+```
+
+###3️⃣ Install Required Libraries
 You can install the dependencies using one of the following methods:
-Option A: Using requirements.txt (Recommended)
-code
-Bash
+##Option A: Using requirements.txt (Recommended)
+```bash
 pip install -r requirements.txt
-Option B: Manual Installation
-code
-Bash
+```
+##ption B: Manual Installation
+```bash
 pip install ultralytics numpy opencv-python mediapipe==0.10.21 scikit-learn flask
-4️⃣ Run the System
+```
+
+###4️⃣ Run the System
 Once the environment is set up and libraries are installed, run the main detection script:
-code
-Bash
+```bash
 python main.py
-⚡ Features
-🎯 Real-Time Detection
+```
+
+###⚡ Features
+##🎯 Real-Time Detection
 Integrated YOLOv8 / YOLOv9 models for high-accuracy detection of students and mobile devices.
-🧠 Behavioral Analysis
+##🧠 Behavioral Analysis
 Implemented MediaPipe hand tracking and pose estimation to identify head tilt and hand-to-phone interactions.
-👤 Student–Phone Association
+##👤 Student–Phone Association
 Built logic using IoU (Intersection over Union) and geometric matching to correctly associate a detected phone with the specific student holding it.
-📊 Activity Classification
+##📊 Activity Classification
 Designed a scikit-learn classification model to classify behavior into:
 Active Phone Use
 Passive Holding
 No-Phone Condition
-💡 Screen Glow Detection
+##💡 Screen Glow Detection
 Added a dedicated algorithm to detect screen light/glow, enabling detection even in:
 Low-light environments
 Phones hidden under desks
-🚨 Alerts & Logging
+##🚨 Alerts & Logging
 Real-time Audio & Visual Alerts when cheating is detected.
 Automated incident logging using SQLite and CSV for record-keeping.
-📡 Live Dashboard
+##📡 Live Dashboard
 Optional Flask-based live dashboard for remote monitoring and data visualization.
-🛠️ Tech Stack
-Python[1]
+###🛠️ Tech Stack
+Python
 YOLOv8 / YOLOv9 (Ultralytics)
 OpenCV
 MediaPipe
