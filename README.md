@@ -3,34 +3,44 @@
 
 **Smart Invigilator** is an AI system developed to maintain academic integrity by detecting mobile phone usage in classrooms in real time. By combining object detection, pose estimation, and behavioral analysis, this system differentiates between active phone use (cheating) and passive holding, providing automated alerts and evidence logging.
 
+---
+
 ## 🚀 How to Run
 
 Follow this step-by-step guide to set up the project on your local machine.
 
 ### 1️⃣ Clone the Repository
-*(Run the git clone command for your specific repository url)*
-
-### 2️⃣ Create a Virtual Environment
-
+Open your terminal or command prompt and run:
+```bash
+git clone https://github.com/your-username/smart-invigilator.git
+cd smart-invigilator
+2️⃣ Create a Virtual Environment
 It is recommended to use a virtual environment to manage dependencies.
-
-**Windows**
-
+Windows
+code
+Powershell
 python -m venv venv
 venv\Scripts\activate
-
-
-###3️⃣ Install Required Libraries
+macOS / Linux
+code
+Bash
+python3 -m venv venv
+source venv/bin/activate
+3️⃣ Install Required Libraries
 You can install the dependencies using one of the following methods:
-##Option A: Using requirements.txt (Recommended)
+Option A: Using requirements.txt (Recommended)
+code
+Bash
 pip install -r requirements.txt
-##Option B: Manual Installation
-pip install ultralytics numpy opencv-python mediapipe==0.10.21 
-###4️⃣ Run the System
+Option B: Manual Installation
+code
+Bash
+pip install ultralytics numpy opencv-python mediapipe==0.10.21 scikit-learn flask
+4️⃣ Run the System
 Once the environment is set up and libraries are installed, run the main detection script:
+code
+Bash
 python main.py
-
-
 ⚡ Features
 🎯 Real-Time Detection
 Integrated YOLOv8 / YOLOv9 models for high-accuracy detection of students and mobile devices.
@@ -53,11 +63,10 @@ Automated incident logging using SQLite and CSV for record-keeping.
 📡 Live Dashboard
 Optional Flask-based live dashboard for remote monitoring and data visualization.
 🛠️ Tech Stack
-Python
+Python[1]
 YOLOv8 / YOLOv9 (Ultralytics)
-
 OpenCV
-
 MediaPipe
-
 Scikit-learn
+Flask (Dashboard)
+SQLite / CSV
