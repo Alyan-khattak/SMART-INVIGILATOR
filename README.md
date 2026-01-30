@@ -35,33 +35,43 @@ Once the environment is set up and libraries are installed, run the main detecti
 ```bash
 python main.py
 ```
+## ⚡ Features
 
-⚡ Features
-🎯 Real-Time Detection
-Integrated YOLOv8 / YOLOv9 models for high-accuracy detection of students and mobile devices.
-🧠 Behavioral Analysis
-Implemented MediaPipe hand tracking and pose estimation to identify head tilt and hand-to-phone interactions.
-👤 Student–Phone Association
-Built logic using IoU (Intersection over Union) and geometric matching to correctly associate a detected phone with the specific student holding it.
-📊 Activity Classification
-Designed a scikit-learn classification model to classify behavior into:
-Active Phone Use
-Passive Holding
-No-Phone Condition
-💡 Screen Glow Detection
+### 🎯 Real-Time Detection
+Integrated **YOLOv8 / YOLOv9** models for high-accuracy detection of students and mobile devices.
+
+### 🧠 Behavioral Analysis
+Implemented **MediaPipe** hand tracking and pose estimation to identify head tilt and hand-to-phone interactions.
+
+### 👤 Student–Phone Association
+Built logic using **IoU (Intersection over Union)** and geometric matching to correctly associate a detected phone with the specific student holding it.
+
+### 📊 Activity Classification
+Designed a **scikit-learn** classification model to classify behavior into:
+*   **Active Phone Use**
+*   **Passive Holding**
+*   **No-Phone Condition**
+
+### 💡 Screen Glow Detection
 Added a dedicated algorithm to detect screen light/glow, enabling detection even in:
-Low-light environments
-Phones hidden under desks
-🚨 Alerts & Logging
-Real-time Audio & Visual Alerts when cheating is detected.
-Automated incident logging using SQLite and CSV for record-keeping.
-📡 Live Dashboard
-Optional Flask-based live dashboard for remote monitoring and data visualization.
-🛠️ Tech Stack
-Python
-YOLOv8 / YOLOv9 (Ultralytics)
-OpenCV
-MediaPipe
-Scikit-learn
-Flask (Dashboard)
-SQLite / CSV
+*   Low-light environments
+*   Phones hidden under desks
+
+### 🚨 Alerts & Logging
+*   **Real-time Audio & Visual Alerts** when cheating is detected.
+*   **Automated incident logging** using SQLite and CSV for record-keeping.
+
+### 📡 Live Dashboard
+Optional **Flask-based** live dashboard for remote monitoring and data visualization.
+
+---
+
+## 🛠️ Tech Stack
+
+*   **Python**
+*   **YOLOv8 / YOLOv9** (Ultralytics)
+*   **OpenCV**
+*   **MediaPipe**
+*   **Scikit-learn**
+*   **Flask** (Dashboard)
+*   **SQLite / CSV**
